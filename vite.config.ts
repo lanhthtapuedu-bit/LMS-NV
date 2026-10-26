@@ -6,9 +6,10 @@ import {defineConfig} from 'vite';
 export default defineConfig(() => {
   return {
     base'/LMS-NV/'
-    plugins: [react(), tailwindcss()],
-    resolve: {
-      alias: {
+    server: {
+port: 3000,
+host: '0.0.0.0',
+},
         '@': path.resolve(import.meta.dirname, '.'),
       },
     },
