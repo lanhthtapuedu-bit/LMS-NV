@@ -1,0 +1,22 @@
+Hãy tiếp tục phát triển dự án LMS Ngữ văn 6 – Bài 1 “Tôi và các bạn” từ mã nguồn hiện có trong repository này.
+
+YÊU CẦU BẮT BUỘC
+1. Trước khi sửa, đọc toàn bộ cấu trúc và các tệp hiện có. Không xóa nội dung, tài liệu hoặc chức năng đang chạy.
+2. Giữ nhận diện giao diện hiện tại: xanh dương – cam, phong cách LMS hiện đại, font Be Vietnam Pro, tương thích máy tính/điện thoại.
+3. Giữ nội dung khóa học Ngữ văn 6, bộ sách Kết nối tri thức với cuộc sống; giữ khu vực thông tin sản phẩm và 4 thành viên ở cuối trang chính.
+4. Kiểm tra các liên kết trong thư mục hoc_lieu và sửa đường dẫn hỏng nếu có. Không tự tạo tên tệp tài liệu giả.
+5. Xây dựng trang quản trị học liệu riêng, chỉ người được phân quyền mới được quản lý. Các loại học liệu: bài giảng video, video minh họa, âm thanh ghi bài, PDF, DOCX, PPTX, hình ảnh, phiếu bài tập, đề kiểm tra và hướng dẫn chấm.
+6. Cho phép quản trị viên thêm/sửa/xóa tiêu đề, mô tả, loại học liệu, chủ đề/bài học, thứ tự hiển thị và tệp hoặc URL. Hiển thị tiến trình tải lên, thông báo lỗi rõ ràng và xác nhận trước khi xóa.
+7. Thiết kế lớp dữ liệu để học liệu không bị mất khi tải lại trang. Đề xuất và triển khai tích hợp lưu trữ đám mây phù hợp (ưu tiên Firebase Storage + Firestore nếu phù hợp với môi trường dự án); không giả vờ rằng lưu trong bộ nhớ trình duyệt là cơ sở dữ liệu dùng chung.
+8. Nếu cần cấu hình Firebase hoặc dịch vụ ngoài, hãy nêu rõ các bước tạo dự án, biến môi trường/Secrets và quy tắc bảo mật. Không nhúng khóa bí mật hoặc mật khẩu quản trị vào mã phía trình duyệt. Không bật quyền tải lên công khai.
+9. Giữ tài khoản demo hiện tại chỉ cho mục đích trình diễn cho đến khi xác thực thật được thiết lập; ghi rõ giới hạn bảo mật.
+10. Không chuyển sang framework mới hoặc thiết kế lại toàn bộ khi chưa giải thích lợi ích và kiểm tra tương thích. Nếu chuyển sang React/Node.js để hỗ trợ quản trị và lưu trữ, phải giữ nguyên trải nghiệm giao diện đã duyệt và cung cấp hướng dẫn chạy.
+11. Sau mỗi thay đổi, chạy kiểm tra build/lint nếu dự án có cấu hình, kiểm tra các đường dẫn tài liệu và báo cáo chính xác chức năng nào đã hoạt động, chức năng nào còn cần cấu hình.
+
+LỘ TRÌNH
+Giai đoạn 1: đọc mã nguồn, lập sơ đồ cấu trúc, kiểm tra liên kết và đề xuất thay đổi nhỏ nhất.
+Giai đoạn 2: hoàn thiện thư viện học liệu có phân loại và tìm kiếm.
+Giai đoạn 3: trang quản trị thêm/sửa/xóa học liệu và tích hợp lưu trữ đám mây an toàn.
+Giai đoạn 4: kiểm thử trên máy tính và điện thoại; báo cáo lỗi và hướng dẫn triển khai.
+
+Bắt đầu bằng Giai đoạn 1. Chưa xóa hoặc thay thế bất kỳ nội dung nào trước khi báo cáo những gì đang có.

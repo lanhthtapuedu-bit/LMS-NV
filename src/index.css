@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --blue: #1686d9;
+    --blue2: #42b4ee;
+    --navy: #163d85;
+    --orange: #ff6b24;
+    --orange2: #ff9b31;
+    --ink: #20334e;
+    --muted: #6d829e;
+    --pale: #f2f9ff;
+    --line: #e1edf8;
+    --white: #fff;
+    --green: #22bd91;
+  }
+
+  body {
+    font-family: "Be Vietnam Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    color: var(--ink);
+    background-color: #f7fbff;
+    scroll-behavior: smooth;
+  }
+}

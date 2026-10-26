@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>LMS Ngữ văn 6 | Tôi và các bạn</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root{--blue:#1686d9;--blue2:#42b4ee;--navy:#163d85;--orange:#ff6b24;--orange2:#ff9b31;--ink:#20334e;--muted:#6d829e;--pale:#f2f9ff;--line:#e1edf8;--white:#fff;--green:#22bd91;--shadow:0 16px 40px rgba(31,94,157,.12)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:"Be Vietnam Pro",Arial,sans-serif;color:var(--ink);background:#f7fbff}button,input{font:inherit}button,a{transition:.2s ease}a{color:inherit;text-decoration:none}.wrap{width:min(1240px,calc(100% - 42px));margin:auto}
+.topbar{height:78px;background:#fff;display:flex;align-items:center;border-bottom:1px solid #e9f1f8;position:sticky;top:0;z-index:20}.nav{display:flex;align-items:center;gap:26px}.brand{display:flex;align-items:center;gap:10px;font-weight:900;font-size:21px;color:var(--navy);white-space:nowrap}.brand-mark{width:43px;height:43px;border-radius:14px;background:linear-gradient(145deg,#ff8b32,#ff5a20);display:grid;place-items:center;color:#fff;box-shadow:0 8px 18px #ff7b3033}.brand-mark svg{width:28px}.brand em{font-style:normal;color:var(--orange)}.navlinks{display:flex;gap:22px;margin-left:auto;color:#536a86;font-size:13px;font-weight:700}.navlinks a:hover{color:var(--blue)}.nav-actions{display:flex;gap:9px}.btn{border:0;border-radius:12px;padding:12px 17px;font-weight:800;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;gap:8px}.btn-primary{background:linear-gradient(135deg,var(--orange),#ff8a28);color:#fff;box-shadow:0 8px 18px #ff742b35}.btn-primary:hover{transform:translateY(-2px);box-shadow:0 12px 24px #ff742b45}.btn-blue{background:var(--navy);color:#fff}.btn-light{background:#edf7ff;color:var(--navy)}.menu-toggle{display:none}
+.hero{overflow:hidden;position:relative;background:linear-gradient(112deg,#48a7ed 0%,#72c8f0 57%,#9adcf4 100%);min-height:500px;color:#fff}.hero:before{content:"";position:absolute;width:650px;height:650px;border-radius:50%;background:#ffffff14;right:-180px;top:-290px}.hero:after{content:"";position:absolute;width:360px;height:360px;border-radius:50%;background:#fff1;left:45%;bottom:-280px}.hero-inner{min-height:500px;display:grid;grid-template-columns:1.02fr .98fr;align-items:center;gap:20px;position:relative;z-index:1;padding-top:22px;padding-bottom:22px}.eyebrow{display:inline-flex;align-items:center;gap:9px;text-transform:uppercase;letter-spacing:2px;font-size:11px;font-weight:900;color:#eaf8ff}.eyebrow:before{content:"";width:28px;height:3px;border-radius:9px;background:#fff}.hero h1{font-size:clamp(42px,5vw,68px);line-height:1.08;letter-spacing:-2px;margin:22px 0 18px;font-weight:900}.hero h1 span{display:block;color:#164e9f}.hero p{font-size:15px;line-height:1.9;max-width:560px;color:#f2fbff;margin:0 0 25px}.hero-cta{display:flex;gap:12px;flex-wrap:wrap}.hero-cta .btn{padding:15px 20px}.hero-art{width:100%;max-width:570px;justify-self:end;filter:drop-shadow(0 22px 18px #1266a328)}.hero-badges{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}.hero-badge{background:#ffffffdf;color:#254b76;border-radius:14px;padding:10px 14px;font-size:12px;font-weight:800;display:flex;align-items:center;gap:8px;box-shadow:0 6px 15px #1c75b51a}.hero-badge b{color:var(--orange);font-size:17px}
+.section{padding:68px 0}.section-head{text-align:center;margin:0 auto 32px;max-width:720px}.kicker{color:var(--blue);font-size:11px;letter-spacing:2.5px;font-weight:900;text-transform:uppercase}.section-head h2{font-size:clamp(26px,3vw,36px);margin:10px 0;color:#203c60;letter-spacing:-.7px}.section-head p{font-size:14px;color:var(--muted);line-height:1.8;margin:0}.course-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.course-card{background:#fff;border:1px solid var(--line);border-radius:22px;overflow:hidden;box-shadow:0 8px 25px #244d7209;transition:.25s;display:flex;flex-direction:column}.course-card:hover{transform:translateY(-5px);box-shadow:var(--shadow)}.course-cover{height:150px;padding:22px;position:relative;overflow:hidden;display:flex;align-items:flex-end}.course-cover:after{content:"";position:absolute;width:170px;height:170px;border-radius:50%;background:#ffffff45;right:-25px;top:-65px}.cover-blue{background:linear-gradient(135deg,#c5ebff,#80c9f6)}.cover-orange{background:linear-gradient(135deg,#ffe2c6,#ffb36b)}.cover-green{background:linear-gradient(135deg,#d5f8ed,#8fe0c8)}.cover-purple{background:linear-gradient(135deg,#e6ddff,#b6a2ff)}.cover-red{background:linear-gradient(135deg,#ffe0df,#ffaaa6)}.cover-yellow{background:linear-gradient(135deg,#fff0c5,#ffd26d)}.cover-icon{width:60px;height:60px;border-radius:19px;background:#ffffffdf;display:grid;place-items:center;font-size:30px;position:relative;z-index:1;box-shadow:0 8px 20px #244d7214}.cover-tag{position:absolute;z-index:1;right:17px;bottom:22px;font-size:11px;font-weight:900;letter-spacing:1px;color:#245b91}.course-body{padding:20px 21px 18px;display:flex;flex-direction:column;flex:1}.course-meta{display:flex;justify-content:space-between;gap:10px;color:#7890a9;font-size:11px;font-weight:700}.course-body h3{font-size:17px;line-height:1.45;margin:12px 0 8px;color:#203e64}.course-body p{font-size:12px;line-height:1.8;color:#6c8097;margin:0 0 16px}.course-bottom{margin-top:auto;display:flex;justify-content:space-between;align-items:center;border-top:1px solid #edf3f8;padding-top:14px}.status{font-size:11px;font-weight:800;color:#168e70;display:flex;align-items:center;gap:6px}.status:before{content:"";width:7px;height:7px;border-radius:50%;background:#2ac49a}.small-btn{border:0;border-radius:10px;padding:9px 12px;background:#edf7ff;color:#1769aa;font-weight:900;font-size:11px;cursor:pointer}.small-btn:hover{background:var(--navy);color:white}
+.feature-band{background:#fff;padding:44px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.feature-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.feature{border:1px solid #e7f0f8;border-radius:18px;padding:21px 17px;background:linear-gradient(145deg,#fff,#f6fbff)}.feature .ico{width:45px;height:45px;display:grid;place-items:center;border-radius:14px;background:#e4f4ff;font-size:22px;margin-bottom:14px}.feature h3{font-size:13px;margin:0 0 7px}.feature p{font-size:11px;line-height:1.75;color:var(--muted);margin:0}
+.resource-list{display:grid;grid-template-columns:repeat(2,1fr);gap:13px}.resource{background:#fff;border:1px solid var(--line);border-radius:15px;padding:16px;display:flex;gap:13px;align-items:center}.resource-ico{width:45px;height:45px;flex-shrink:0;border-radius:13px;background:#fff0e4;display:grid;place-items:center;font-size:21px}.resource h3{font-size:13px;margin:0 0 4px}.resource p{font-size:11px;color:var(--muted);margin:0 0 8px;line-height:1.6}.resource a{font-size:11px;color:#1478bf;font-weight:900}
+.team-section{background:linear-gradient(180deg,#f2f9ff,#eaf5ff)}.team-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px}.member{background:#fff;border:1px solid #dcecf9;border-radius:22px;padding:24px 18px;text-align:center;box-shadow:0 10px 26px #23588b0c;min-width:0}.avatar{width:100px;height:100px;border-radius:28px;margin:0 auto 15px;display:grid;place-items:center;overflow:hidden}.avatar svg{width:100%;height:100%}.member .member-label{font-size:9px;letter-spacing:1.4px;font-weight:900;color:#1695d7}.member h3{font-size:17px;margin:7px 0;color:#203d63}.member .role{font-size:11px;color:#4e6d91;font-weight:800;margin-bottom:9px}.member p{font-size:11px;color:#8193a8;line-height:1.75;margin:0}.member .photo-note{margin-top:13px;color:#1489d2;font-size:10px;font-style:italic}
+.footer{background:#173e70;color:#e7f4ff;padding:35px 0 20px}.footer-grid{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:28px}.footer h3{font-size:12px;letter-spacing:1px;margin:0 0 12px;color:#fff}.footer p,.footer a{font-size:11px;line-height:1.9;color:#c1d9ee}.footer a{display:block}.footer-bottom{border-top:1px solid #ffffff20;margin-top:25px;padding-top:15px;text-align:center;color:#a9c6df;font-size:10px}
+.overlay{position:fixed;inset:0;z-index:100;background:linear-gradient(135deg,#1686d9,#70cef1);display:none;align-items:center;justify-content:center;padding:20px}.overlay.show{display:flex}.login-box{width:min(440px,100%);background:#fff;border-radius:28px;padding:34px;box-shadow:0 25px 80px #0d4c7c55}.login-brand{display:flex;align-items:center;gap:10px;color:var(--navy);font-size:22px;font-weight:900}.login-box h2{font-size:26px;margin:24px 0 6px}.login-box>p{color:var(--muted);font-size:12px;line-height:1.7;margin-bottom:24px}.field{margin-bottom:15px}.field label{display:block;font-size:12px;font-weight:800;margin-bottom:7px}.field input{width:100%;border:1px solid #dce8f3;border-radius:12px;padding:13px;outline:none}.field input:focus{border-color:#1686d9;box-shadow:0 0 0 3px #1686d91a}.login-box .btn{width:100%;padding:14px}.login-error{display:none;color:#d34242;font-size:12px;margin-top:12px}.login-error.show{display:block}.login-hint{margin-top:16px;padding:11px 12px;border-radius:12px;background:#f0f8ff;color:#68819b;font-size:10px;line-height:1.7}.lesson-modal{display:none;position:fixed;inset:0;z-index:70;background:#0b2446a8;padding:20px;overflow:auto;align-items:center;justify-content:center}.lesson-modal.show{display:flex}.modal-card{background:#fff;border-radius:22px;width:min(780px,100%);max-height:90vh;overflow:auto;padding:26px}.modal-head{display:flex;justify-content:space-between;gap:15px;align-items:flex-start}.modal-head h2{margin:0 0 8px;font-size:22px}.close{border:0;border-radius:10px;background:#eef6fc;padding:9px 13px;cursor:pointer;font-weight:900}.modal-content{font-size:13px;line-height:1.9;color:#526982}.modal-content h3{color:#1a4e83}.quiz-q{padding:14px;background:#f5faff;border-radius:12px;margin:12px 0}.quiz-q label{display:block;margin:7px 0;cursor:pointer}.quiz-result{font-weight:900;color:#168b6b;margin-top:10px}
+@media(max-width:900px){.navlinks{gap:12px}.hero-inner{grid-template-columns:1fr 1fr}.hero h1{font-size:48px}.course-grid{grid-template-columns:repeat(2,1fr)}.team-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:680px){.wrap{width:min(100% - 28px,560px)}.topbar{height:68px}.navlinks{display:none}.nav-actions .btn{padding:10px 12px;font-size:11px}.hero-inner{grid-template-columns:1fr;padding-top:44px;padding-bottom:34px}.hero h1{font-size:46px}.hero-art{width:min(100%,450px);justify-self:center;margin-top:8px}.hero{min-height:0}.section{padding:48px 0}.course-grid,.resource-list{grid-template-columns:1fr}.feature-grid{grid-template-columns:repeat(2,1fr)}.team-grid{grid-template-columns:1fr 1fr;gap:10px}.member{padding:18px 11px}.avatar{width:78px;height:78px;border-radius:22px}.member h3{font-size:14px}.footer-grid{grid-template-columns:1fr}.brand{font-size:18px}.hero-badges{gap:8px}.hero-badge{font-size:10px}}
+@media(max-width:390px){.team-grid{grid-template-columns:1fr}.hero h1{font-size:39px}.feature-grid{grid-template-columns:1fr}}
+
+/* Main-page team credits */
+.main-team-section{padding:58px 0 62px;background:linear-gradient(180deg,#f2f9ff 0%,#e6f4ff 100%);border-top:1px solid #dcecf8}
+.main-team-inner{width:min(1240px,calc(100% - 42px));margin:0 auto}
+.main-team-credit{background:#fff;border:1px solid #d6e9f8;border-radius:20px;padding:22px 28px;margin:0 auto 26px;text-align:center;box-shadow:0 10px 28px rgba(31,94,157,.08)}
+.main-team-credit .credit-label{font-size:11px;font-weight:900;letter-spacing:2px;text-transform:uppercase;color:#1686d9;margin-bottom:9px}
+.main-team-credit p{font-size:13px;line-height:1.85;color:#4e6682;margin:0;font-weight:600}
+.main-team-heading{text-align:center;margin:0 0 24px}
+.main-team-heading .kicker{color:#1686d9;font-size:11px;font-weight:900;letter-spacing:2px}
+.main-team-heading h2{font-size:clamp(26px,3vw,35px);line-height:1.3;color:#203c60;margin:8px 0}
+.main-team-heading p{font-size:13px;color:#6d829e;margin:0}
+.main-team-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px}
+.main-teacher-card{min-width:0;background:#fff;border:1px solid #d9eaf8;border-radius:22px;padding:24px 16px 22px;text-align:center;box-shadow:0 12px 30px rgba(31,94,157,.09);transition:transform .2s,box-shadow .2s}
+.main-teacher-card:hover{transform:translateY(-4px);box-shadow:0 18px 36px rgba(31,94,157,.14)}
+.main-teacher-avatar{width:112px;height:112px;border-radius:28px;overflow:hidden;margin:0 auto 15px;box-shadow:0 7px 18px rgba(31,94,157,.1)}
+.main-teacher-avatar svg{display:block;width:100%;height:100%}
+.main-teacher-tag{font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:#1686d9;font-weight:900}
+.main-teacher-card h3{font-size:19px;line-height:1.35;color:#203d63;margin:8px 0}
+.main-teacher-role{font-size:12px;color:#486b91;font-weight:800;margin-bottom:10px}
+.main-teacher-card p{font-size:12px;line-height:1.8;color:#7389a2;margin:0}
+.main-teacher-card .teacher-school{margin-top:8px;padding-top:9px;border-top:1px solid #edf3f8;color:#8296ab;font-size:11px}
+@media(max-width:900px){.main-team-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.main-teacher-card{padding:22px 14px}}
+@media(max-width:560px){.main-team-inner{width:calc(100% - 28px)}.main-team-section{padding:42px 0}.main-team-credit{padding:18px 15px}.main-team-credit p{font-size:11px}.main-team-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.main-teacher-card{padding:16px 9px;border-radius:17px}.main-teacher-avatar{width:78px;height:78px;border-radius:20px}.main-teacher-card h3{font-size:15px}.main-teacher-card p{font-size:10px}.main-teacher-role{font-size:10px}}
+@media(max-width:360px){.main-team-grid{grid-template-columns:1fr}.main-teacher-avatar{width:92px;height:92px}}
+
+</style>
+</head>
+<body>
+<div class="overlay show" id="loginOverlay">
+ <form class="login-box" id="loginForm">
+  <div class="login-brand"><span class="brand-mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="4" y="7" width="16" height="12" rx="3"/><circle cx="9" cy="12" r="1"/><circle cx="15" cy="12" r="1"/><path d="M12 3v4M9 3h6"/></svg></span> LMS <em style="color:#ff6b24">NGỮ VĂN 6</em></div>
+  <h2>Chào mừng bạn trở lại!</h2><p>Đăng nhập để khám phá khóa học <b>“Tôi và các bạn”</b>.</p>
+  <div class="field"><label for="username">Tên đăng nhập</label><input id="username" autocomplete="username" required placeholder="Nhập tên đăng nhập"></div>
+  <div class="field"><label for="password">Mật khẩu</label><input id="password" type="password" autocomplete="current-password" required placeholder="Nhập mật khẩu"></div>
+  <button class="btn btn-primary" type="submit">ĐĂNG NHẬP <span>→</span></button>
+  <div class="login-error" id="loginError">Tên đăng nhập hoặc mật khẩu chưa chính xác.</div>
+  <div class="login-hint">Đăng nhập bằng tài khoản LMS được cung cấp cho khóa học.</div>
+ </form>
+</div>
+<header class="topbar"><div class="wrap nav">
+ <a class="brand" href="#home"><span class="brand-mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="4" y="7" width="16" height="12" rx="3"/><circle cx="9" cy="12" r="1"/><circle cx="15" cy="12" r="1"/><path d="M12 3v4M9 3h6"/></svg></span> LMS <em>NGỮ VĂN 6</em></a>
+ <nav class="navlinks"><a href="#home">Trang chủ</a><a href="#courses">Khóa học</a><a href="#resources">Học liệu</a><a href="#team">Đội ngũ</a></nav>
+ <div class="nav-actions"><button class="btn btn-light" onclick="showLogin()">Tài khoản</button><button class="btn btn-primary" onclick="showLogin()">Đăng nhập</button></div>
+</div></header>
+<main>
+<section class="hero" id="home"><div class="wrap hero-inner">
+ <div><div class="eyebrow">Không gian học tập số · Lớp 6</div>
+ <h1>Tôi và các bạn<span>Khám phá thế giới tình bạn</span></h1>
+ <p>Cùng đọc, khám phá nhân vật, hiểu sức mạnh của ngôn từ và học cách trân trọng những khác biệt qua Bài 1 – bộ sách Kết nối tri thức với cuộc sống.</p>
+ <div class="hero-cta"><a class="btn btn-primary" href="#courses">KHÁM PHÁ KHÓA HỌC <span>→</span></a><a class="btn btn-blue" href="#resources">KHO HỌC LIỆU</a></div>
+ <div class="hero-badges"><div class="hero-badge"><b>✦</b> Đọc hiểu chủ đề</div><div class="hero-badge"><b>✓</b> Học qua trải nghiệm</div></div></div>
+ <svg class="hero-art" viewBox="0 0 600 510" role="img" aria-label="Minh họa robot học tập LMS">
+ <defs><linearGradient id="panel" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fff"/><stop offset="1" stop-color="#e8f7ff"/></linearGradient><linearGradient id="blueBot" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#6ed0ff"/><stop offset="1" stop-color="#0872c7"/></linearGradient><linearGradient id="orange" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ffb64d"/><stop offset="1" stop-color="#ff5b22"/></linearGradient></defs>
+ <ellipse cx="360" cy="455" rx="190" ry="24" fill="#1675ba" opacity=".2"/>
+ <rect x="18" y="80" width="365" height="330" rx="28" fill="#1767ad" opacity=".24" transform="translate(9 12)"/>
+ <rect x="18" y="70" width="365" height="330" rx="28" fill="url(#panel)" stroke="#d5f1ff" stroke-width="3"/>
+ <circle cx="48" cy="99" r="7" fill="#ff6a36"/><circle cx="70" cy="99" r="7" fill="#ffb13b"/><circle cx="92" cy="99" r="7" fill="#54c98e"/>
+ <text x="45" y="163" font-size="45" font-weight="900" fill="#ff6b24">LMS</text>
+ <rect x="42" y="188" width="145" height="68" rx="15" fill="#ffdbb8"/><text x="59" y="229" font-size="18">🎓</text><text x="91" y="230" font-size="14" font-weight="700" fill="#23466c">Lớp học</text>
+ <rect x="202" y="188" width="150" height="68" rx="15" fill="#b9e4ff"/><text x="218" y="229" font-size="18">📘</text><text x="252" y="230" font-size="14" font-weight="700" fill="#23466c">Bài học</text>
+ <rect x="42" y="271" width="145" height="68" rx="15" fill="#ffd2ce"/><text x="58" y="313" font-size="18">✓</text><text x="91" y="313" font-size="14" font-weight="700" fill="#23466c">Bài tập</text>
+ <rect x="202" y="271" width="150" height="68" rx="15" fill="#ffe6a7"/><text x="218" y="313" font-size="18">📊</text><text x="252" y="313" font-size="14" font-weight="700" fill="#23466c">Kết quả</text>
+ <!-- robot head -->
+ <rect x="400" y="90" width="145" height="142" rx="58" fill="url(#blueBot)" stroke="#0872bd" stroke-width="4"/>
+ <rect x="421" y="126" width="103" height="78" rx="32" fill="#ffe6cb"/>
+ <rect x="415" y="142" width="46" height="37" rx="13" fill="#fff" stroke="#704c3e" stroke-width="5"/><rect x="478" y="142" width="46" height="37" rx="13" fill="#fff" stroke="#704c3e" stroke-width="5"/>
+ <circle cx="438" cy="159" r="9" fill="#26364b"/><circle cx="501" cy="159" r="9" fill="#26364b"/><path d="M456 160h13" stroke="#704c3e" stroke-width="5"/>
+ <path d="M449 187q19 13 39-2" fill="none" stroke="#a54c37" stroke-width="4" stroke-linecap="round"/>
+ <circle cx="472" cy="78" r="17" fill="url(#orange)"/><rect x="466" y="91" width="12" height="14" rx="5" fill="#ff6b24"/>
+ <!-- body -->
+ <rect x="419" y="230" width="108" height="125" rx="34" fill="url(#blueBot)" stroke="#0872bd" stroke-width="4"/>
+ <rect x="440" y="254" width="67" height="53" rx="12" fill="#fff"/><rect x="459" y="267" width="29" height="25" rx="6" fill="#1686d9"/><circle cx="467" cy="278" r="2.5" fill="#fff"/><circle cx="480" cy="278" r="2.5" fill="#fff"/>
+ <!-- arms -->
+ <path d="M425 255q-33 15-47 47" fill="none" stroke="#1686d9" stroke-width="23" stroke-linecap="round"/><circle cx="375" cy="306" r="17" fill="#42a9ef"/>
+ <rect x="329" y="265" width="48" height="75" rx="7" fill="#0874c7" transform="rotate(-15 329 265)"/><path d="M350 284h23m-21 12h23" stroke="#aee7ff" stroke-width="4"/>
+ <path d="M520 256q33 12 35 42" fill="none" stroke="#1686d9" stroke-width="23" stroke-linecap="round"/><rect x="535" y="282" width="39" height="60" rx="6" fill="url(#orange)" transform="rotate(16 535 282)"/>
+ <!-- legs -->
+ <rect x="432" y="343" width="31" height="77" rx="14" fill="#167bc5"/><rect x="485" y="343" width="31" height="77" rx="14" fill="#167bc5"/><rect x="418" y="403" width="58" height="28" rx="14" fill="url(#orange)"/><rect x="476" y="403" width="58" height="28" rx="14" fill="url(#orange)"/>
+ <circle cx="385" cy="365" r="23" fill="url(#orange)"/><path d="M375 365l7 7 14-16" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round"/>
+ <path d="M390 53l7 14 14 7-14 7-7 14-7-14-14-7 14-7z" fill="#fff" opacity=".85"/>
+ </svg>
+</div></section>
+
+<section class="section" id="courses"><div class="wrap">
+ <div class="section-head"><div class="kicker">Học theo chủ đề</div><h2>Khám phá các chuyên đề</h2><p>Mỗi chuyên đề kết hợp học liệu trực tuyến, hoạt động trên lớp và nhiệm vụ vận dụng.</p></div>
+ <div class="course-grid">
+  <article class="course-card"><div class="course-cover cover-blue"><div class="cover-icon">📚</div><span class="cover-tag">CHUYÊN ĐỀ 01</span></div><div class="course-body"><div class="course-meta"><span>ĐỌC HIỂU</span><span>01</span></div><h3>Tri thức Ngữ văn & Bài học đường đời đầu tiên</h3><p>Khám phá truyện đồng thoại, nhân vật Dế Mèn, Dế Choắt và bài học về cách ứng xử.</p><div class="course-bottom"><span class="status">Học liệu khóa học</span><button class="small-btn" onclick="openLesson('reading')">VÀO HỌC →</button></div></div></article>
+  <article class="course-card"><div class="course-cover cover-orange"><div class="cover-icon">✍️</div><span class="cover-tag">CHUYÊN ĐỀ 02</span></div><div class="course-body"><div class="course-meta"><span>THỰC HÀNH TIẾNG VIỆT</span><span>02</span></div><h3>Từ đơn, từ phức và nghĩa của từ</h3><p>Nhận diện từ ngữ, phân tích tác dụng của từ láy và vận dụng tiếng Việt trong ngữ cảnh.</p><div class="course-bottom"><span class="status">Bài tập tương tác</span><button class="small-btn" onclick="openLesson('vietnamese')">VÀO HỌC →</button></div></div></article>
+  <article class="course-card"><div class="course-cover cover-green"><div class="cover-icon">🧭</div><span class="cover-tag">CHUYÊN ĐỀ 03</span></div><div class="course-body"><div class="course-meta"><span>VIẾT</span><span>03</span></div><h3>Kể lại một trải nghiệm của bản thân</h3><p>Tìm ý, lập dàn ý, viết bản nháp và chỉnh sửa bài văn kể lại trải nghiệm đáng nhớ.</p><div class="course-bottom"><span class="status">Nhiệm vụ vận dụng</span><button class="small-btn" onclick="openLesson('writing')">VÀO HỌC →</button></div></div></article>
+  <article class="course-card"><div class="course-cover cover-purple"><div class="cover-icon">🎙️</div><span class="cover-tag">CHUYÊN ĐỀ 04</span></div><div class="course-body"><div class="course-meta"><span>NÓI VÀ NGHE</span><span>04</span></div><h3>Kể chuyện và lắng nghe tích cực</h3><p>Chuẩn bị nội dung trình bày, thực hành kể chuyện và phản hồi theo tiêu chí.</p><div class="course-bottom"><span class="status">Rubric đánh giá</span><button class="small-btn" onclick="openLesson('speaking')">VÀO HỌC →</button></div></div></article>
+  <article class="course-card"><div class="course-cover cover-red"><div class="cover-icon">💬</div><span class="cover-tag">CHUYÊN ĐỀ 05</span></div><div class="course-body"><div class="course-meta"><span>ĐỌC MỞ RỘNG</span><span>05</span></div><h3>Tình bạn và sự tôn trọng khác biệt</h3><p>Liên hệ văn bản, đọc mở rộng và chia sẻ cách ứng xử tích cực trong tình bạn.</p><div class="course-bottom"><span class="status">Hoạt động nhóm</span><button class="small-btn" onclick="openLesson('friends')">VÀO HỌC →</button></div></div></article>
+  <article class="course-card"><div class="course-cover cover-yellow"><div class="cover-icon">🏆</div><span class="cover-tag">CHUYÊN ĐỀ 06</span></div><div class="course-body"><div class="course-meta"><span>ÔN TẬP & ĐÁNH GIÁ</span><span>06</span></div><h3>Hệ thống hóa kiến thức Bài 1</h3><p>Ôn tập kiến thức, thực hiện bài kiểm tra và tự đánh giá quá trình học tập.</p><div class="course-bottom"><span class="status">Kiểm tra cuối bài</span><button class="small-btn" onclick="openLesson('assessment')">VÀO HỌC →</button></div></div></article>
+ </div>
+</div></section>
+
+<section class="feature-band"><div class="wrap"><div class="feature-grid">
+ <div class="feature"><div class="ico">🎓</div><h3>HỌC THEO LỘ TRÌNH</h3><p>Nội dung được sắp xếp theo chủ đề, có định hướng trước – trong – sau giờ học.</p></div>
+ <div class="feature"><div class="ico">💻</div><h3>HỌC TRÊN MỌI THIẾT BỊ</h3><p>Giao diện thích ứng với máy tính, máy tính bảng và điện thoại.</p></div>
+ <div class="feature"><div class="ico">🤝</div><h3>HỖ TRỢ HỌC TẬP</h3><p>Phiếu học tập, câu hỏi gợi ý và nhiệm vụ trao đổi trên lớp.</p></div>
+ <div class="feature"><div class="ico">📊</div><h3>THEO DÕI KẾT QUẢ</h3><p>Có hoạt động luyện tập và khu vực kiểm tra – đánh giá.</p></div>
+</div></div></section>
+
+<section class="section" id="resources"><div class="wrap"><div class="section-head"><div class="kicker">Tài nguyên học tập</div><h2>Kho học liệu số</h2><p>Tập hợp kế hoạch bài dạy, bài giảng, phiếu bài tập và đề kiểm tra của khóa học.</p></div>
+ <div class="resource-list" id="resourceList">
+  <article class="resource"><div class="resource-ico">📘</div><div><h3>Kế hoạch bài dạy</h3><p>Khung mục tiêu, tiến trình và hoạt động dạy học Bài 1.</p><a href="hoc_lieu/01_Ke_hoach_bai_day.docx" download>TẢI TÀI LIỆU ↗</a></div></article>
+  <article class="resource"><div class="resource-ico">📝</div><div><h3>Phiếu bài tập phát triển năng lực</h3><p>Hệ thống câu hỏi và nhiệm vụ luyện tập.</p><a href="hoc_lieu/02_Phieu_bai_tap_PISA.docx" download>TẢI TÀI LIỆU ↗</a></div></article>
+  <article class="resource"><div class="resource-ico">📋</div><div><h3>Đề kiểm tra đọc hiểu và viết</h3><p>Đề, ma trận, đặc tả và hướng dẫn chấm.</p><a href="hoc_lieu/03_De_kiem_tra_tong_ket.docx" download>TẢI TÀI LIỆU ↗</a></div></article>
+  <article class="resource"><div class="resource-ico">🎬</div><div><h3>Bài giảng trình chiếu trực tuyến</h3><p>Tệp trình chiếu hỗ trợ tổ chức hoạt động học tập.</p><a href="hoc_lieu/04_Bai_giang_truc_tuyen.ppsx" download>TẢI BÀI GIẢNG ↗</a></div></article>
+  <article class="resource"><div class="resource-ico">✏️</div><div><h3>Phiếu thực hành tiếng Việt</h3><p>Bài tập từ đơn, từ phức và nghĩa của từ ngữ.</p><a href="hoc_lieu/05_Phieu_bai_tap_tieng_Viet.docx" download>TẢI TÀI LIỆU ↗</a></div></article>
+  <article class="resource"><div class="resource-ico">✅</div><div><h3>Đề kiểm tra thực hành tiếng Việt</h3><p>Đề kiểm tra thường xuyên, thang điểm và rubric.</p><a href="hoc_lieu/06_De_kiem_tra_tieng_Viet.docx" download>TẢI ĐỀ KIỂM TRA ↗</a></div></article>
+ </div>
+</div></section>
+
+<section class="section team-section" id="team"><div class="wrap">
+ <div class="section-head"><div class="kicker">Đội ngũ thực hiện</div><h2>Thành viên nhóm thiết kế</h2><p>Khóa học kết hợp Ngữ văn 6 · Bài 1: Tôi và các bạn</p></div>
+ <div class="team-grid">
+  <article class="member"><div class="avatar" style="background:#d9efff"><svg viewBox="0 0 100 100"><circle cx="50" cy="37" r="21" fill="#f2c4a2"/><path d="M28 40Q24 12 50 13Q75 14 72 41L62 28L43 30L30 42" fill="#4d426d"/><path d="M15 100Q17 61 50 61Q83 61 85 100" fill="#248de0"/></svg></div><div class="member-label">THÀNH VIÊN 01</div><h3>Tú Lành</h3><div class="role">Thiết kế kỹ thuật · LMS</div><p>Môn học: Ngữ văn<br>Học viên Cao học – K51<br>Trường Đại học Sư phạm – Đại học Đà Nẵng</p></article>
+  <article class="member"><div class="avatar" style="background:#dff8f0"><svg viewBox="0 0 100 100"><circle cx="50" cy="37" r="21" fill="#f2c4a2"/><path d="M28 40Q24 12 50 13Q75 14 72 41L62 28L43 30L30 42" fill="#82538c"/><path d="M15 100Q17 61 50 61Q83 61 85 100" fill="#39c5a4"/></svg></div><div class="member-label">THÀNH VIÊN 02</div><h3>Thu Hiếu</h3><div class="role">Nội dung bài giảng 1</div><p>Môn học: Ngữ văn<br>Học viên Cao học – K51<br>Trường Đại học Sư phạm – Đại học Đà Nẵng</p></article>
+  <article class="member"><div class="avatar" style="background:#ffedda"><svg viewBox="0 0 100 100"><circle cx="50" cy="37" r="21" fill="#f2c4a2"/><path d="M28 40Q24 12 50 13Q75 14 72 41L62 28L43 30L30 42" fill="#536c94"/><path d="M15 100Q17 61 50 61Q83 61 85 100" fill="#ff9b52"/></svg></div><div class="member-label">THÀNH VIÊN 03</div><h3>Lâm Oanh</h3><div class="role">Nội dung bài giảng 2</div><p>Môn học: Ngữ văn<br>Học viên Cao học – K51<br>Trường Đại học Sư phạm – Đại học Đà Nẵng</p></article>
+  <article class="member"><div class="avatar" style="background:#eee5ff"><svg viewBox="0 0 100 100"><circle cx="50" cy="37" r="21" fill="#f2c4a2"/><path d="M28 40Q24 12 50 13Q75 14 72 41L62 28L43 30L30 42" fill="#78529a"/><path d="M15 100Q17 61 50 61Q83 61 85 100" fill="#a87aff"/></svg></div><div class="member-label">THÀNH VIÊN 04</div><h3>Kim Xuyến</h3><div class="role">Nội dung bài giảng 3</div><p>Môn học: Ngữ văn<br>Học viên Cao học – K51<br>Trường Đại học Sư phạm – Đại học Đà Nẵng</p></article>
+ </div>
+</div></section>
+</main>
+
+<section class="main-team-section" id="nhom-thuc-hien">
+ <div class="main-team-inner">
+  <div class="main-team-credit">
+   <div class="credit-label">Thông tin sản phẩm</div>
+   <p>Sản phẩm được tạo bởi nhóm Học viên Cao học – K51 – Chuyên ngành: Lí luận Phương pháp dạy học Bộ môn Ngữ văn – Trường Đại học Sư phạm – Đại học Đà Nẵng.</p>
+  </div>
+  <div class="main-team-heading">
+   <div class="kicker">ĐỘI NGŨ THỰC HIỆN</div>
+   <h2>Thông tin giáo viên</h2>
+   <p>Nhóm thực hiện khóa học kết hợp Ngữ văn 6 · Bài 1: Tôi và các bạn</p>
+  </div>
+  <div class="main-team-grid">
+   <article class="main-teacher-card">
+    <div class="main-teacher-avatar" style="background:#d9efff"><svg viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="37" r="21" fill="#f2c4a2"/><path d="M28 40Q24 12 50 13Q75 14 72 41L62 28L43 30L30 42" fill="#4d426d"/><path d="M15 100Q17 61 50 61Q83 61 85 100" fill="#248de0"/></svg></div>
+    <div class="main-teacher-tag">Thành viên 01</div><h3>Tú Lành</h3><div class="main-teacher-role">Thiết kế kỹ thuật · LMS</div>
+    <p>Giáo viên phụ trách: Tú Lành<br>Môn học: Ngữ văn</p><p class="teacher-school">Trường: [Bổ sung thông tin]<br>Học viên Cao học – K51<br>Trường Đại học Sư phạm – Đại học Đà Nẵng</p>
+   </article>
+   <article class="main-teacher-card">
+    <div class="main-teacher-avatar" style="background:#dff8f0"><svg viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="37" r="21" fill="#f2c4a2"/><path d="M28 40Q24 12 50 13Q75 14 72 41L62 28L43 30L30 42" fill="#82538c"/><path d="M15 100Q17 61 50 61Q83 61 85 100" fill="#39c5a4"/></svg></div>
+    <div class="main-teacher-tag">Thành viên 02</div><h3>Thu Hiếu</h3><div class="main-teacher-role">Nội dung bài giảng 1</div>
+    <p>Giáo viên phụ trách: Thu Hiếu<br>Môn học: Ngữ văn</p><p class="teacher-school">Trường: [Bổ sung thông tin]<br>Học viên Cao học – K51<br>Trường Đại học Sư phạm – Đại học Đà Nẵng</p>
+   </article>
+   <article class="main-teacher-card">
+    <div class="main-teacher-avatar" style="background:#ffedda"><svg viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="37" r="21" fill="#f2c4a2"/><path d="M28 40Q24 12 50 13Q75 14 72 41L62 28L43 30L30 42" fill="#536c94"/><path d="M15 100Q17 61 50 61Q83 61 85 100" fill="#ff9b52"/></svg></div>
+    <div class="main-teacher-tag">Thành viên 03</div><h3>Lâm Oanh</h3><div class="main-teacher-role">Nội dung bài giảng 2</div>
+    <p>Giáo viên phụ trách: Lâm Oanh<br>Môn học: Ngữ văn</p><p class="teacher-school">Trường: [Bổ sung thông tin]<br>Học viên Cao học – K51<br>Trường Đại học Sư phạm – Đại học Đà Nẵng</p>
+   </article>
+   <article class="main-teacher-card">
+    <div class="main-teacher-avatar" style="background:#eee5ff"><svg viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="37" r="21" fill="#f2c4a2"/><path d="M28 40Q24 12 50 13Q75 14 72 41L62 28L43 30L30 42" fill="#78529a"/><path d="M15 100Q17 61 50 61Q83 61 85 100" fill="#a87aff"/></svg></div>
+    <div class="main-teacher-tag">Thành viên 04</div><h3>Kim Xuyến</h3><div class="main-teacher-role">Nội dung bài giảng 3</div>
+    <p>Giáo viên phụ trách: Kim Xuyến<br>Môn học: Ngữ văn</p><p class="teacher-school">Trường: [Bổ sung thông tin]<br>Học viên Cao học – K51<br>Trường Đại học Sư phạm – Đại học Đà Nẵng</p>
+   </article>
+  </div>
+ </div>
+</section>
+
+<footer class="footer"><div class="wrap"><div class="footer-grid"><div><h3>LMS · NGỮ VĂN 6</h3><p>Không gian học tập số cho Bài 1: <i>Tôi và các bạn</i>, bộ sách Kết nối tri thức với cuộc sống.</p></div><div><h3>KHÁM PHÁ</h3><a href="#courses">Các chuyên đề</a><a href="#resources">Kho học liệu</a><a href="#team">Thành viên nhóm</a></div><div><h3>THÔNG TIN KHÓA HỌC</h3><p>Học phần: Dạy học số<br>Đối tượng: Ngữ văn 6<br>Hình thức: Học kết hợp</p></div></div><div class="footer-bottom">© LMS Ngữ văn 6 · Bài 1: Tôi và các bạn</div></div></footer>
+
+<div class="lesson-modal" id="lessonModal" role="dialog" aria-modal="true"><div class="modal-card"><div class="modal-head"><div><div class="kicker">KHÔNG GIAN HỌC TẬP</div><h2 id="modalTitle">Bài học</h2></div><button class="close" onclick="closeLesson()">ĐÓNG ✕</button></div><div class="modal-content" id="modalContent"></div></div></div>
+<script>
+const USER='BAI1_NV6', PASS='NHOM4@';
+const overlay=document.getElementById('loginOverlay');
+function showLogin(){overlay.classList.add('show');}
+document.getElementById('loginForm').addEventListener('submit',e=>{e.preventDefault();const u=document.getElementById('username').value.trim(),p=document.getElementById('password').value; if(u===USER&&p===PASS){overlay.classList.remove('show');document.getElementById('loginError').classList.remove('show');}else{document.getElementById('loginError').classList.add('show');}});
+const lessons={
+reading:{title:'Tri thức Ngữ văn & Bài học đường đời đầu tiên',body:`<h3>Mục tiêu học tập</h3><ul><li>Nhận biết một số yếu tố của truyện đồng thoại.</li><li>Xác định người kể chuyện, nhân vật và sự việc chính.</li><li>Phân tích nhân vật bằng chi tiết tiêu biểu trong văn bản.</li></ul><h3>Nhiệm vụ học tập</h3><ol><li>Đọc văn bản trong sách giáo khoa.</li><li>Ghi lại hai chi tiết thể hiện tính cách Dế Mèn.</li><li>Trả lời: Hành động của Dế Mèn gây ra hậu quả gì? Em rút ra bài học nào?</li></ol><p><b>Sản phẩm:</b> Phiếu đọc hiểu có dẫn chứng.</p>`},
+vietnamese:{title:'Thực hành tiếng Việt: Từ đơn, từ phức',body:`<h3>Mục tiêu học tập</h3><ul><li>Nhận biết từ đơn, từ phức; phân biệt từ ghép và từ láy.</li><li>Giải thích nghĩa của từ trong ngữ cảnh.</li><li>Phân tích tác dụng của từ láy.</li></ul><h3>Câu hỏi luyện tập nhanh</h3><div class="quiz-q"><p><b>1. Từ nào sau đây là từ láy?</b></p><label><input type="radio" name="q1" value="a"> học sinh</label><label><input type="radio" name="q1" value="b"> long lanh</label><label><input type="radio" name="q1" value="c"> bàn ghế</label><button class="small-btn" onclick="checkQuick()">KIỂM TRA</button><div id="quickResult" class="quiz-result"></div></div><p><b>Nhiệm vụ:</b> Tìm ba từ láy trong một văn bản đã học và giải thích tác dụng.</p>`},
+writing:{title:'Viết: Kể lại một trải nghiệm của bản thân',body:`<h3>Quy trình viết</h3><ol><li>Chọn một trải nghiệm đáng nhớ.</li><li>Tìm ý và sắp xếp sự việc theo trình tự hợp lí.</li><li>Viết bản nháp, chú ý chi tiết và cảm xúc.</li><li>Đọc lại, chỉnh sửa và hoàn thiện bài viết.</li></ol><h3>Nhiệm vụ</h3><p>Hoàn thành dàn ý gồm mở bài, thân bài và kết bài. Dùng bảng kiểm để tự rà soát trước khi nộp.</p>`},
+speaking:{title:'Nói và nghe: Kể lại trải nghiệm',body:`<h3>Nhiệm vụ</h3><ol><li>Chuẩn bị dàn ý cho bài kể.</li><li>Trình bày trong 2–3 phút.</li><li>Lắng nghe bạn, đặt câu hỏi và phản hồi lịch sự.</li></ol><p><b>Tiêu chí:</b> Nội dung rõ ràng, trình tự mạch lạc, diễn đạt phù hợp, biết lắng nghe.</p>`},
+friends:{title:'Đọc mở rộng: Tình bạn và sự tôn trọng khác biệt',body:`<h3>Cùng suy ngẫm</h3><p>Vì sao cần tôn trọng sự khác biệt giữa bạn bè? Hãy nêu một tình huống trong đời sống và đề xuất cách ứng xử phù hợp.</p><p><b>Sản phẩm:</b> Đoạn văn ngắn hoặc thẻ thông điệp về tình bạn.</p>`},
+assessment:{title:'Ôn tập và kiểm tra – đánh giá',body:`<h3>Trước khi làm bài</h3><ul><li>Ôn lại kiến thức về truyện đồng thoại, nhân vật và người kể chuyện.</li><li>Ôn tập từ đơn, từ phức, từ ghép, từ láy và nghĩa của từ.</li><li>Đọc lại yêu cầu viết và tiêu chí đánh giá.</li></ul><p>Đề kiểm tra và hướng dẫn chấm có trong mục Kho học liệu.</p>`}
+};
+function openLesson(key){if(overlay.classList.contains('show')){document.getElementById('loginError').classList.add('show');return;}const x=lessons[key];document.getElementById('modalTitle').textContent=x.title;document.getElementById('modalContent').innerHTML=x.body;document.getElementById('lessonModal').classList.add('show');}
+function closeLesson(){document.getElementById('lessonModal').classList.remove('show')}
+function checkQuick(){const a=document.querySelector('input[name="q1"]:checked');document.getElementById('quickResult').textContent=!a?'Hãy chọn một đáp án.':a.value==='b'?'Chính xác! “Long lanh” là từ láy.':'Chưa chính xác. Hãy thử lại.';}
+</script>
+</body>
+</html>

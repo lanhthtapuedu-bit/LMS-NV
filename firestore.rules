@@ -1,0 +1,46 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    function isSignedIn() {
+      return request.auth != null;
+    }
+
+    function isTeacherOrAdmin() {
+      return isSignedIn() && (
+        request.auth.token.email == 'lanhtht.apuedu@gmail.com' ||
+        exists(/databases/$(database)/documents/admins/$(request.auth.uid))
+      );
+    }
+
+    // Default deny for unhandled paths
+    match /{document=**} {
+      allow read, write: if false;
+    }
+
+    // Resources collection for LMS Ngữ văn 6
+    // Allow public read for instructors, students, and any remote machines
+    // Allow create, update, delete for course materials
+    match /resources/{resourceId} {
+      allow read: if true;
+      allow write: if true;
+    }
+
+    // Cloud file binary storage for multi-device document access & download
+    match /resource_files/{resourceId} {
+      allow read: if true;
+      allow write: if true;
+
+      match /chunks/{chunkId} {
+        allow read: if true;
+        allow write: if true;
+      }
+    }
+
+    // Admins collection
+    match /admins/{adminId} {
+      allow read: if true;
+      allow write: if isTeacherOrAdmin();
+    }
+  }
+}

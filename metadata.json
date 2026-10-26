@@ -1,0 +1,6 @@
+{
+  "name": "LMS Ngữ văn 6 - Tôi và các bạn",
+  "description": "Không gian học tập số LMS Ngữ văn 6 – Bài 1: Tôi và các bạn (bộ sách Kết nối tri thức với cuộc sống), tích hợp kho học liệu đa phương tiện và trang quản trị học liệu.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

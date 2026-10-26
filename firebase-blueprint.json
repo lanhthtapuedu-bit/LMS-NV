@@ -1,0 +1,53 @@
+{
+  "entities": {
+    "Resource": {
+      "title": "Resource",
+      "description": "A learning material item in LMS Ngữ văn 6",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "title": { "type": "string", "maxLength": 500 },
+        "description": { "type": "string", "maxLength": 2000 },
+        "type": { "type": "string" },
+        "category": { "type": "string" },
+        "topic": { "type": "string", "maxLength": 200 },
+        "order": { "type": "number" },
+        "fileUrl": { "type": "string", "maxLength": 5000 },
+        "fileName": { "type": "string", "maxLength": 300 },
+        "fileSize": { "type": "string", "maxLength": 50 },
+        "uploadedAt": { "type": "string", "maxLength": 50 },
+        "author": { "type": "string", "maxLength": 100 },
+        "contentPreview": { "type": "string", "maxLength": 50000 },
+        "isOriginal": { "type": "boolean" },
+        "matrixCode": { "type": "string", "maxLength": 50 },
+        "statusTag": { "type": "string", "maxLength": 50 }
+      },
+      "required": ["id", "title"]
+    },
+    "ResourceFile": {
+      "title": "ResourceFile",
+      "description": "Cloud file binary storage for multi-device document download",
+      "type": "object",
+      "properties": {
+        "resourceId": { "type": "string" },
+        "fileName": { "type": "string", "maxLength": 300 },
+        "fileType": { "type": "string", "maxLength": 50 },
+        "fileSize": { "type": "number" },
+        "dataBase64": { "type": "string", "maxLength": 1000000 },
+        "totalChunks": { "type": "number" },
+        "uploadedAt": { "type": "string", "maxLength": 50 }
+      },
+      "required": ["resourceId"]
+    }
+  },
+  "firestore": {
+    "/resources/{resourceId}": {
+      "schema": "Resource",
+      "description": "Collection of all literature 6 learning materials"
+    },
+    "/resource_files/{resourceId}": {
+      "schema": "ResourceFile",
+      "description": "Cloud file binary storage for multi-device document download"
+    }
+  }
+}
